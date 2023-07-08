@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ling-ticket-booking"
+  },
+  "targets": {
+    "ling-ticket-booking": {
+      "hosting": {
+        "student-register": [
+          "ling-student-register"
+        ]
+      }
+    }
+  }
+}

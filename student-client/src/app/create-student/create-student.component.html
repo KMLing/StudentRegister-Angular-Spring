@@ -1,0 +1,26 @@
+
+<div class="container-sm" style="align-items: center;
+width: 400px; padding-top: 80px;">
+<div >
+  <form (ngSubmit)="OnSubmit()">
+    <div class="mb-3">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.firstName" name="firstName">
+    </div>
+
+    <div class="mb-3">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lastName" name="lastName">
+    </div>
+
+    <div class="mb-3">
+      <label for="name">Email</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="student.email" name="email">
+    </div>
+
+    <button type="submit" class="btn btn-dark" style="align-items:flex-end" >Submit</button>
+  </form>
+</div>
+
+</div>
+

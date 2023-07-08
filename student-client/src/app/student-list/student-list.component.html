@@ -1,0 +1,58 @@
+<!-- <table class="table table-striped">
+<thead>
+    <tr>
+    <th>No</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor = "let student of students" >
+        <td>{{student.id}}</td>
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.email }}</td>
+        <td>
+            <button (click)="updateStudent(student.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            <button (click)="deleteStudent(student.id)" class="btn btn-info" style="margin-left: 10px">Delete</button>
+
+        </td>
+    </tr>
+</tbody>
+</table> -->
+<div class="row row-cols-4 row-cols-md-4 g-1"  >
+  <div class="col" *ngFor = "let student of students">
+      <div class="card"  >
+       <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/> 
+        <div class="card-body">
+          <h5 class="card-title">{{student.id}}</h5>
+          <p class="card-text">{{ student.firstName }}{{ student.lastName }}</p>
+          <p class="card-text">{{ student.email }}</p>
+          <button (click)="updateStudent(student.id)" class="btn btn-dark" style="margin-left: 10px">Update</button>
+          <button (click)="deleteStudent(student.id)" class="btn btn-dark" style="margin-left: 10px">Delete</button>
+        </div>
+      </div>
+    </div>
+ </div>
+
+<!-- Example Code -->
+    
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">«</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">»</span>
+      </a>
+    </li>
+  </ul>
+</nav>
